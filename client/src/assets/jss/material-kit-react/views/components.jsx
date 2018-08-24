@@ -18,7 +18,7 @@ const componentsStyle = {
     margin: "10px 0 0"
   },
   main: {
-    background: "rgba(0, 0, 0, 0.5)",
+    // background: "rgba(0, 0, 0, 0.5)",
     position: "relative",
     zIndex: "3"
   },

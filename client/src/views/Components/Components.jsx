@@ -63,13 +63,13 @@ class Components extends React.Component {
         </Parallax> */}
 
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <SectionBasics />
-          <SectionNavbars />
-          <SectionTabs />
+          {/* <SectionBasics /> */}
+          {/* <SectionNavbars /> */}
+          {/* <SectionTabs /> */}
           <SectionPills />
-          <SectionNotifications />
-          <SectionTypography />
-          <SectionJavascript />
+          {/* <SectionNotifications /> */}
+          {/* <SectionTypography /> */}
+          {/* <SectionJavascript /> */}
           <SectionCarousel />
           {/* <SectionCompletedExamples /> */}
           {/* <SectionLogin /> */}

@@ -86,7 +86,7 @@ body {
     background-image: url("../img/bg1.jpg");
 
     /* Set a specific height */
-    height: 5000px; 
+    height: 2500px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -95,11 +95,11 @@ body {
     background-size: cover;
 }
  canvas {
-       min-height: 1000px;
+       min-height: 2500px;
 }
   .content-container {
     background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
+    color: rgba(108, 13, 146, 0.479);
     /* width: 80%; */
   }
 legend {

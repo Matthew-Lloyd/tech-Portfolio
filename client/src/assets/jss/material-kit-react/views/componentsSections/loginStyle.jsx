@@ -13,7 +13,6 @@ const loginStyle = {
     border: "0",
     display: "flex",
     alignItems: "center",
-    backgroundImage: "url(" + image + ")"
   },
   container,
   form: {
