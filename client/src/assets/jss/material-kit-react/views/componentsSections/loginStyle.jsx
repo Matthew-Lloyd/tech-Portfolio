@@ -55,7 +55,7 @@ const loginStyle = {
     padding: "0",
   },
   inputIconsColor: {
-    color: "#495057",
+    color: "#ffffff",
   }
 };
 

@@ -69,14 +69,17 @@ const defaultFont = {
   lineHeight: "1.5em"
 };
 
-const primaryColor = "#9c27b0";
-const warningColor = "#6c0d927a";
+const primaryColor = "#6c0d927a";
+const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
 const infoColor = "#00abc19f";
-const roseColor = "#e91e63";
+const roseColor = "#0f0f0f9f";
 const grayColor = "#999999";
 // transparent purple: #6c0d927a
+//rose original #e91e63
+// primary original #9c27b0
+// warning original #ff9800
 
 const primaryBoxShadow = {
   boxShadow:
@@ -131,7 +134,8 @@ const primaryCardHeader = {
 };
 const roseCardHeader = {
   color: "#fff",
-  background: "linear-gradient(60deg, #ec407a, #d81b60)",
+  background: "#0f0f0f9f",
+  // "linear-gradient(60deg, #ec407a, #d81b60)",
   ...roseBoxShadow
 };
 const cardActions = {

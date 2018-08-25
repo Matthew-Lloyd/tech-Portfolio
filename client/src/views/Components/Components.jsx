@@ -40,27 +40,27 @@ class Components extends React.Component {
           brand="Matthew Lloyd"
           rightLinks={<HeaderLinks />}
           fixed
-          color="dark"
+          color="transparent"
           changeColorOnScroll={{
             height: 200,
-            color: "transparent"
+            color: "rose"
           }}
           {...rest}
         />
-        {/* <Parallax image={require("assets/img/me2-mod.jpg")}>
+        <Parallax image={require("assets/img/profile-bg.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Hello World. Matt here.</h1>
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    Developer with a passion for all things future in tech!
                   </h3>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
-        </Parallax> */}
+        </Parallax>
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           {/* <SectionBasics /> */}

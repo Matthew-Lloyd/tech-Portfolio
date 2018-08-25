@@ -3,8 +3,8 @@ import React from "react";
 import withStyles from "material-ui/styles/withStyles";
 import InputAdornment from "material-ui/Input/InputAdornment";
 // @material-ui/icons
-import People from "@material-ui/icons/People";
-import LockOutline from "@material-ui/icons/LockOutline";
+import Face from "@material-ui/icons/Face";
+import Chat from "@material-ui/icons/Chat";
 import Email from "@material-ui/icons/Email";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -23,14 +23,14 @@ class SectionLogin extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      // <div className={classes.section}>
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={12}>
+            {/* <GridItem xs={12} sm={12} md={12}> */}
               <Card>
                 <form className={classes.form}>
                   <CardHeader color="info" className={classes.cardHeader}>
-                    <h4>Login</h4>
+                    <h3>CONTACT</h3>
                     <div className={classes.socialLine}>
                       <IconButton
                         href="#pablo"
@@ -66,10 +66,9 @@ class SectionLogin extends React.Component {
                       </IconButton>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
-                      labelText="First Name..."
+                      labelText="Full Name"
                       id="first"
                       formControlProps={{
                         fullWidth: true
@@ -78,13 +77,13 @@ class SectionLogin extends React.Component {
                         type: "text",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <People className={classes.inputIconsColor}/>
+                            <Face className={classes.inputIconsColor}/>
                           </InputAdornment>
                         )
                       }}
                     />
                     <CustomInput
-                      labelText="Email..."
+                      labelText="Email"
                       id="email"
                       formControlProps={{
                         fullWidth: true
@@ -99,32 +98,38 @@ class SectionLogin extends React.Component {
                       }}
                     />
                     <CustomInput
-                      labelText="Password"
-                      id="pass"
+                      labelText="Message"
+                      id="message"
                       formControlProps={{
-                        fullWidth: true
+                        fullWidth: true,
+                        className: classes.textArea
                       }}
                       inputProps={{
-                        type: "password",
+                        type: "text",
+                        name: "Message",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <LockOutline className={classes.inputIconsColor}/>
+                            <Chat className={classes.inputIconsColor} />
                           </InputAdornment>
-                        )
+                        ),
+                        // onChange: event => this.handleInputChange(event),
+                        multiline: true,
+                        rows: 6
                       }}
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
-                      Get started
+                
+                    <Button color="info" size="lg">
+                      SEND
                     </Button>
                   </CardFooter>
                 </form>
               </Card>
-            </GridItem>
+            {/* </GridItem> */}
           </GridContainer>
         </div>
-      </div>
+      // </div>
     );
   }
 }
