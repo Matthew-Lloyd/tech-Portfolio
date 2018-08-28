@@ -43,17 +43,17 @@ class Components extends React.Component {
           color="transparent"
           changeColorOnScroll={{
             height: 200,
-            color: "rose"
+            color: "primary"
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/profile-bg.jpg")}>
+        <Parallax >
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Hello World. Matt here.</h1>
-                  <h3 className={classes.subtitle}>
+                  <h1 className={classes.title}>Hello Universe. Matt here.</h1>
+                  <h3>
                     Developer with a passion for all things future in tech!
                   </h3>
                 </div>
@@ -70,6 +70,15 @@ class Components extends React.Component {
           {/* <SectionNotifications /> */}
           {/* <SectionTypography /> */}
           {/* <SectionJavascript /> */}
+          <h1 
+            style={{
+              textAlign: "center",
+              fontWeight: 600,
+              fontSize: "4.2rem",
+              color: "white"
+            }}
+          >
+            Portfolio</h1>
           <SectionCarousel />
           {/* <SectionCompletedExamples /> */}
           {/* <SectionLogin /> */}

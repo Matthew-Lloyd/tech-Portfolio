@@ -21,9 +21,9 @@ function Footer({ ...props }) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <footer className={footerClasses}>
+    <footer style={{color: "white"}} className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a href="https://www.creative-tim.com/" className={classes.block}>
@@ -52,12 +52,12 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
           </List>
-        </div>
-        <div className={classes.right}>
+        </div> */}
+        <div className={classes.center}>
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a href="http://www.creative-tim.com" className={aClasses}>
-            Creative Tim
+            Matthew Lloyd
           </a>{" "}
           for a better web.
         </div>

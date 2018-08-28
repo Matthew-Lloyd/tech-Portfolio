@@ -24,86 +24,53 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            // eslint-disable-next-line
-            <a
-              href="http://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="linkedin"
+          title="Follow me on LinkedIn"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton
-            href="https://twitter.com/CreativeTim"
-            target="_blank"
             color="transparent"
+            href="https://www.linkedin.com/in/-matthew-lloyd/"
+            target="_blank"
             className={classes.navLink + " " + classes.socialIconsButton}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
           </IconButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
+          id="github"
+          title="Follow me on GitHub"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://github.com/Matthew-Lloyd"
             target="_blank"
+            color="transparent"
             className={classes.navLink + " " + classes.socialIconsButton}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <i className={classes.socialIcons + " fab fa-github"} />
           </IconButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
+          id="stack-overflow"
+          title="Follow me on StackOverflow"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://stackoverflow.com/users/8577618/matthew-lloyd"
             target="_blank"
             className={classes.navLink + " " + classes.socialIconsButton}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <i className={classes.socialIcons + " fab fa-stack-overflow"} />
           </IconButton>
         </Tooltip>
       </ListItem>

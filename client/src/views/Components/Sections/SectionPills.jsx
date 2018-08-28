@@ -28,16 +28,22 @@ class SectionPills extends React.Component {
         <div className={classes.container}>
           <div id="navigation-pills">
             <div className={classes.title}>
-              <h3 style={{
-                color: "white"
-              }}>
+              <div className="slick-caption">
+              <h3 className={classes.subtitle}
+                style={{
+                color: "white",
+                fontWeight: 450,
+                // fontSize: "3.0rem",
+                }}
+              >
                 Everything you need:
               </h3>
+              </div>
             </div>
             <GridContainer>
               <GridItem xs={12} sm={12} md={12} lg={12}>
                 <NavPills
-                  color="primary"
+                  color="info"
                   horizontal={{
                     tabsGrid: { xs: 12, sm: 4, md: 4 },
                     contentGrid: { xs: 12, sm: 8, md: 8 }
@@ -94,7 +100,7 @@ class SectionPills extends React.Component {
                             <li>Python</li>
                           </ul>
                           <ul>
-                            <h3>TECHNOLOGIES</h3>
+                            <h4>TECHNOLOGIES</h4>
                             <li>React + Redux</li>
                             <li>Node.js</li>
                             <li>Express</li>

@@ -29,7 +29,7 @@ class SectionLogin extends React.Component {
             {/* <GridItem xs={12} sm={12} md={12}> */}
               <Card>
                 <form className={classes.form}>
-                  <CardHeader color="info" className={classes.cardHeader}>
+                  <CardHeader color="danger" className={classes.cardHeader}>
                     <h3>CONTACT</h3>
                     <div className={classes.socialLine}>
                       <IconButton

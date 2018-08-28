@@ -18,7 +18,7 @@ body {
   font-size: 1rem; }
 
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Orbitron", "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em; }
 
@@ -86,7 +86,7 @@ body {
     background-image: url("../img/bg1.jpg");
 
     /* Set a specific height */
-    height: 2500px; 
+    height: 750px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -113,7 +113,7 @@ legend {
     outline: 0; }
 
 a {
-  color: #9c27b0;
+  color: #ffffff9f;
   text-decoration: none;
   background-color: transparent; }
   a:hover, a:focus {

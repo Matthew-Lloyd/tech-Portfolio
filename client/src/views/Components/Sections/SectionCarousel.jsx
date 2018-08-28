@@ -23,9 +23,10 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "assets/img/votechain.jpg";
+import image2 from "assets/img/bawcon.jpg";
+import image3 from "assets/img/redditscraper.jpg";
+import image4 from "assets/img/bg7.jpg";
 
 
 function Transition(props) {
@@ -38,6 +39,7 @@ class SectionCarousel extends React.Component {
       proj1Modal: false,
       proj2Modal: false,
       proj3Modal: false,
+      proj4Modal: false,
     };
   }
   handleClickOpen(modal) {
@@ -63,9 +65,9 @@ class SectionCarousel extends React.Component {
     return (
       <div className={classes.section}>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-              <Card carousel>
+          {/* <GridContainer> */}
+            <GridItem xs={12} sm={12} md={12}>
+              {/* <Card carousel> */}
                 <Carousel {...settings}>
                   <div>
                     <img
@@ -106,27 +108,55 @@ class SectionCarousel extends React.Component {
                         id="classic-modal-slide-description"
                         className={classes.modalBody}
                       >
-                        <p>
-                          [VoteChain Summary]
-                      </p>
+                      <ul>
+                          <li>
+                          An immutable voting system built on a homebrewed blockchain ledger. Has sessions 
+                          functionality that stores user data, a responsive and clean UI, databases that 
+                          store eligible voters & new blocks, and the capability to prevent voting fraud by 
+                          a variety of security measures beyond that of the blockchain.
+                          </li>
+                          <li>
+                            Technologies Used: React for frontend, MongoDB for the data storage, 
+                            Express servers, Node.JS for the backend as well as a variety of packages to provide 
+                            the additional functionality needed for the blockchain, sessions and routes
+                          </li>
+                          <li>
+                            <strong>
+                              For Guest Sign-In use <br></br>
+                              Email​: 
+                            </strong>
+                            guest@votechain.com<br></br> 
+                            <strong>
+                              password​: 
+                            </strong>
+                            votechain
+                          </li>
+                      </ul>
                       </DialogContent>
                       <DialogActions className={classes.modalFooter}>
-                        <Button color="transparent" simple>
-                          [VoteChain Github Link]
+                        <Button color="info"
+                          href="https://github.com/ardnehsan/ChainVote"
+                          target="_blank"
+                        >
+                          GITHUB
                       </Button>
                         <Button
                           onClick={() => this.handleClose("proj1Modal")}
                           color="danger"
-                          simple
+                          href="https://vote-chain.herokuapp.com/"
+                          target="_blank"                         
                         >
-                          [VoteChain Heroku Link]
+                        WEBSITE
                       </Button>
                       </DialogActions>
                     </Dialog>
                     <div className="slick-caption">
-                      <h4>
-                        [VOTECHAIN IMAGE]
-                      </h4>
+                      <h1 style={{
+                        color: "black"
+                      }}><strong>
+                        VOTECHAIN
+                        </strong>
+                      </h1>
                     </div>
                   </div>
                   <div>
@@ -173,22 +203,24 @@ class SectionCarousel extends React.Component {
                       </p>
                       </DialogContent>
                       <DialogActions className={classes.modalFooter}>
-                        <Button color="transparent" simple>
-                          [BAWCON LINK]
-                      </Button>
                         <Button
                           onClick={() => this.handleClose("proj2Modal")}
                           color="danger"
-                          simple
+                          href="https://www.bawcon.com/"
+                          target="_blank"
                         >
-                          Close
-                      </Button>
+                          WEBSITE
+                        </Button>
                       </DialogActions>
                     </Dialog>
                     <div className="slick-caption">
-                      <h4>
-                        [BAWCON.COM IMAGE]
-                      </h4>
+                      <h1 style={{
+                        color: "white"
+                        }}>
+                        <strong>
+                          BAWCON.COM
+                        </strong>
+                      </h1>
                     </div>
                   </div>
                   <div>
@@ -230,33 +262,120 @@ class SectionCarousel extends React.Component {
                         id="classic-modal-slide-description"
                         className={classes.modalBody}
                       >
-                        <p>
-                          [REDDIT SCRAPER SUMMARY]
-                      </p>
+                        <ul>
+                        <li> A web scraper full-stack site that pulls current posts from a favorite subreddit, 
+                          stores them into a MongoDB with the Mongoose ORM, then populates the page with the saved posts.
+                        </li>
+                        <li> Built using Handlebars.JS, Express, Node.JS, MongoDB/Mongoose, Cheerio (as the scraper), 
+                          and various other NPM Packages
+                        </li>
+                      </ul>
                       </DialogContent>
                       <DialogActions className={classes.modalFooter}>
-                        <Button color="transparent" simple>
-                          [REDDIT SCRAPER GITHUB LINK]
-                      </Button>
+                        <Button color="info"
+                          href="https://github.com/Matthew-Lloyd/Mongoose-Scraper"
+                          target="_blank">
+                          GITHUB
+                        </Button>
                         <Button
                           onClick={() => this.handleClose("proj3Modal")}
                           color="danger"
-                          simple
+                          href="https://mongo-showerthoughts-scraper.herokuapp.com/"
+                          target="_blank"
                         >
-                          [REDDIT SCRAPER HEROKU LINK]
+                          WEBSITE
                       </Button>
                       </DialogActions>
                     </Dialog>
                     <div className="slick-caption">
-                      <h4>
-                        [REDDIT SCRAPER IMAGE]
-                      </h4>
+                      <h1 
+                        style={{
+                        color: "black"
+                      }}>
+                        <strong>
+                        Reddit Scraper
+                        </strong>
+                      </h1>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      onClick={() => this.handleClickOpen("proj4Modal")}
+                      src={image4}
+                      alt="First slide"
+                      className="slick-image"
+                    />
+                    <Dialog
+                      classes={{
+                        root: classes.center,
+                        paper: classes.modal
+                      }}
+                      open={this.state.proj4Modal}
+                      TransitionComponent={Transition}
+                      keepMounted
+                      onClose={() => this.handleClose("proj4Modal")}
+                      aria-labelledby="classic-modal-slide-title"
+                      aria-describedby="classic-modal-slide-description"
+                    >
+                      <DialogTitle
+                        id="classic-modal-slide-title"
+                        disableTypography
+                        className={classes.modalHeader}
+                      >
+                        <IconButton
+                          className={classes.modalCloseButton}
+                          key="close"
+                          aria-label="Close"
+                          color="inherit"
+                          onClick={() => this.handleClose("proj4Modal")}
+                        >
+                          <Close className={classes.modalClose} />
+                        </IconButton>
+                        <h4 className={classes.modalTitle}>[Project 4]</h4>
+                      </DialogTitle>
+                      <DialogContent
+                        id="classic-modal-slide-description"
+                        className={classes.modalBody}
+                      >
+                        <ul>
+                          <li>
+                            [Project 4 description]
+                          </li>
+                          <li>
+                            [Project 4 Technologies Used:] 
+                          </li>
+                        </ul>
+                      </DialogContent>
+                      <DialogActions className={classes.modalFooter}>
+                        <Button color="info"
+                          href="#"
+                          target="_blank"
+                        >
+                          [GITHUB LINK]
+                          </Button>
+                        <Button
+                          onClick={() => this.handleClose("proj4Modal")}
+                          color="danger"
+                          href="#"
+                          target="_blank"
+                        >
+                          [WEBSITE LINK]
+                          </Button>
+                      </DialogActions>
+                    </Dialog>
+                    <div className="slick-caption">
+                      <h1 style={{
+                        color: "black"
+                      }}><strong>
+                          [PROJECT 4]
+                            </strong>
+                      </h1>
                     </div>
                   </div>
                 </Carousel>
-              </Card>
+              {/* </Card> */}
             </GridItem>
-          </GridContainer>
+          {/* </GridContainer> */}
         </div>
       </div>
     );
