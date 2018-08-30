@@ -54,12 +54,10 @@ function Footer({ ...props }) {
           </List>
         </div> */}
         <div className={classes.center}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a href="http://www.creative-tim.com" className={aClasses}>
             Matthew Lloyd
-          </a>{" "}
-          for a better web.
+          &copy; {1900 + new Date().getYear()}
+          {/* made with{" "}
+          <Favorite className={classes.icon} /> by{" "} */}
         </div>
       </div>
     </footer>

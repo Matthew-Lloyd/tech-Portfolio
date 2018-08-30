@@ -25,9 +25,10 @@ import SectionTypography from "./Sections/SectionTypography.jsx";
 import SectionJavascript from "./Sections/SectionJavascript.jsx";
 import SectionCarousel from "./Sections/SectionCarousel.jsx";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
-import SectionLogin from "./Sections/SectionLogin.jsx";
+import ContactForm from "./Sections/ContactForm.jsx";
 import SectionExamples from "./Sections/SectionExamples.jsx";
 import SectionDownload from "./Sections/SectionDownload.jsx";
+import image1 from "assets/img/_DSF9951-colored.jpg";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
@@ -62,10 +63,19 @@ class Components extends React.Component {
           </div>
         </Parallax>
 
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div>
           {/* <SectionBasics /> */}
           {/* <SectionNavbars /> */}
           {/* <SectionTabs /> */}
+          <div><img
+            id="bio-pic"
+            // onClick={() => this.handleClickOpen("proj1Modal")}
+            src={image1}
+            // alt="image"
+            alt="..."
+            // className={classes.imgRounded + " " + classes.imgFluid}
+            // className="slick-image"
+          /></div>
           <SectionPills />
           {/* <SectionNotifications /> */}
           {/* <SectionTypography /> */}
@@ -78,7 +88,8 @@ class Components extends React.Component {
               color: "white"
             }}
           >
-            Portfolio</h1>
+            Portfolio
+          </h1>
           <SectionCarousel />
           {/* <SectionCompletedExamples /> */}
           {/* <SectionLogin /> */}

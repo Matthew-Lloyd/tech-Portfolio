@@ -1,0 +1,31 @@
+{
+  "name": "tech-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthew-Lloyd/tech-Portfolio.git"
+  },
+  "author": "MPL",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.5",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7"
+  },
+  "bugs": {
+    "url": "https://github.com/Matthew-Lloyd/tech-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Matthew-Lloyd/tech-Portfolio#readme"
+}

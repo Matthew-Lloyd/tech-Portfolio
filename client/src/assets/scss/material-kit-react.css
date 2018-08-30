@@ -83,7 +83,7 @@ body {
 
   .parallax {
     /* The image used */
-    background-image: url("../img/bg1.jpg");
+    background-image: url("../img/profile-bg.jpg");
 
     /* Set a specific height */
     height: 750px; 
@@ -97,6 +97,26 @@ body {
  canvas {
        min-height: 2500px;
 }
+
+ #bio-pic {
+       padding-top: 150px;
+       padding-left: 50px;
+       width: 450px;
+       /* height: 750px; */
+       /* border-radius: "50% !important"; */
+       position: absolute;
+       max-width: "100%";
+       height: "auto";
+}
+@media only screen and (max-width: 600px) {
+    #bio-pic {
+        padding-left:0px;
+        width: 100%;
+    }
+    h1 {
+      font-size: 3.5rem !important;
+    }
+  }
   .content-container {
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(108, 13, 146, 0.479);

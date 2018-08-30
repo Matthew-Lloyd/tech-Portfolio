@@ -122,10 +122,10 @@ class SectionCarousel extends React.Component {
                           </li>
                           <li>
                             <strong>
-                              For Guest Sign-In use <br></br>
+                              For Guest Sign-In use <br />
                               Email​: 
                             </strong>
-                            guest@votechain.com<br></br> 
+                            guest@votechain.com<br />
                             <strong>
                               password​: 
                             </strong>
@@ -198,9 +198,16 @@ class SectionCarousel extends React.Component {
                         id="classic-modal-slide-description"
                         className={classes.modalBody}
                       >
-                        <p>
-                          [BAWCON.COM SUMMARY]
-                      </p>
+                      <ul>
+                        <li> [Black and White Construction]
+                          <br />is a website for an award-winning construction 
+                          company based out of Houston, TX. They specialize in environmentally friendly building 
+                          practices to lower a home's energy footprint.
+                        </li>
+                        <li> Built using React, Express, Node.JS, Material-Kit-React (also used for this site),
+                          and Nodemailer for the contact functionality!
+                        </li>
+                      </ul>  
                       </DialogContent>
                       <DialogActions className={classes.modalFooter}>
                         <Button
@@ -298,7 +305,7 @@ class SectionCarousel extends React.Component {
                       </h1>
                     </div>
                   </div>
-                  <div>
+                  {/* <div>
                     <img
                       onClick={() => this.handleClickOpen("proj4Modal")}
                       src={image4}
@@ -371,7 +378,7 @@ class SectionCarousel extends React.Component {
                             </strong>
                       </h1>
                     </div>
-                  </div>
+                  </div> */}
                 </Carousel>
               {/* </Card> */}
             </GridItem>

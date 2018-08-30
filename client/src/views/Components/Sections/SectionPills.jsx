@@ -16,7 +16,7 @@ import RecordVoiceOver from "@material-ui/icons/RecordVoiceOver";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
-import SectionLogin from "./SectionLogin.jsx";
+import ContactForm from "./ContactForm.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import pillsStyle from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.jsx";
 
@@ -57,15 +57,10 @@ class SectionPills extends React.Component {
                           color: "white"
                         }}>
                         <p>
-                          How do you summarize a life? There are so many different elements and working parts... 
-                          How do you know what's relevant and what is not? I suppose you start with introductions.
-                        </p>
-                        <br />
-                        <p>
                           Hello World! My name is Matthew Lloyd. I am a human with an analytical mind trapped inside a body with a
                            lot of heart. I've spent my early work career climbing the corporate ladder of a Fortune 500 company, 
                            and found myself wanting more. Along the way I have picked up a variety of skills and experience that 
-                           have proven invaluable in the world of business. Among these are things like time management, mentorship, 
+                           have proven invaluable in the world of business. Among these are things like time management, interviewing/mentorship, 
                            adaptability & flexibility, business ownership, on-the-fly problem solving, and exceptional people skills.
                         </p>
                         <br />
@@ -74,14 +69,19 @@ class SectionPills extends React.Component {
                           minute of it!! I can't overstate how much I was made for this kind of work! This has added a whole new 
                           array (pun intended) of skills and experience ranging from Client-side technologies like HTML, CSS, 
                           JQuery, Handlebars & React.js to Server-side tech such as Node.js, Express, mySQL/Sequelize, & MongoDB. 
-                          In other words, the MERN stack toolkit is my arsenal of choice; though I'm not so limited to say this 
+                          In other words, the MERN stack toolkit is my specialty; though I'm not so limited to say this 
                           is the ONLY way.
                         </p>
                         <br />
                         <p>
                           I am looking for a career that will challenge & inspire me on a day-to-day basis and allow me to tap 
                           into the reservoir that is my full potential. I am a fast & eager learner and am willing to go out of 
-                          my comfort zone to do so. Thank you for taking the time to check out my profile, and have a blessed day!
+                          my comfort zone to do so. I have a particular affinity for all things cutting-edge on the technological 
+                          frontier and will always be interested in picking up the next new thing! If you have any interest in 
+                          partnering up for a project or have a business inqury (freelance or otherwise) you'd like to discuss 
+                          with me, fill out the form on the "Contact Me" tab and I'll respond with 1-2 days.
+                          <br />
+                          Thank you for taking the time to check out my little slice of the internet, and have a blessed day!
                           </p>
                         </span>
                       )
@@ -97,10 +97,10 @@ class SectionPills extends React.Component {
                             <h3>LANGUAGES</h3>
                             <li>JavaScript</li>
                             <li>C#</li>
-                            <li>Python</li>
+                            <li>(Soon to be) Python</li>
                           </ul>
                           <ul>
-                            <h4>TECHNOLOGIES</h4>
+                            <h3>TECHNOLOGIES</h3>
                             <li>React + Redux</li>
                             <li>Node.js</li>
                             <li>Express</li>
@@ -127,7 +127,7 @@ class SectionPills extends React.Component {
                         <span style={{
                           color: "white"
                         }}>
-                          <SectionLogin />
+                          <ContactForm />
                         </span>
                       )
                     }
