@@ -45,6 +45,11 @@
     h1 {
       font-size: 3.5rem !important;
     }
+    .parallax {
+    background-attachment: fixed;
+    background-position: center top !important;
+    background-repeat: no-repeat;
+    }
   }
   html * {
   -webkit-font-smoothing: antialiased;
