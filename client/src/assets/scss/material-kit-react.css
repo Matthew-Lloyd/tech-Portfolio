@@ -10,7 +10,43 @@
  * License Creative Tim (https://www.creative-tim.com/license)
  *
  * ========================================================= */
-html * {
+  .parallax {
+    /* The image used */
+    background-image: url("../img/profile-bg.jpg");
+
+    /* Set a specific height */
+    height: 750px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ canvas {
+       min-height: 2500px;
+}
+
+ #bio-pic {
+       padding-top: 150px;
+       padding-left: 50px;
+       width: 450px;
+       /* height: 750px; */
+       /* border-radius: "50% !important"; */
+       position: absolute;
+       max-width: "100%";
+       height: "auto";
+}
+@media only screen and (max-width: 600px) {
+    #bio-pic {
+        padding-left:0px;
+        width: 100%;
+    }
+    h1 {
+      font-size: 3.5rem !important;
+    }
+  }
+  html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -71,57 +107,12 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  /* background: linear-gradient(to top left, rgb(0, 0, 0), rgb(5, 0, 36)); */
-  /* background-image: url("../img/bg1.jpg"); */
-  background-color: #0a0a0a;
-  /* background-repeat: no-repeat; */
-  /* background-size: 100% 100%; */
+  background-color: rgba(0, 0, 0, 0.986);
   color: #3C4858;
   margin: 0;
   font-size: 1rem;
   text-align: left; }
 
-  .parallax {
-    /* The image used */
-    background-image: url("../img/profile-bg.jpg");
-
-    /* Set a specific height */
-    height: 750px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- canvas {
-       min-height: 2500px;
-}
-
- #bio-pic {
-       padding-top: 150px;
-       padding-left: 50px;
-       width: 450px;
-       /* height: 750px; */
-       /* border-radius: "50% !important"; */
-       position: absolute;
-       max-width: "100%";
-       height: "auto";
-}
-@media only screen and (max-width: 600px) {
-    #bio-pic {
-        padding-left:0px;
-        width: 100%;
-    }
-    h1 {
-      font-size: 3.5rem !important;
-    }
-  }
-  .content-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(108, 13, 146, 0.479);
-    /* width: 80%; */
-  }
 legend {
   border-bottom: 0; }
 
@@ -133,11 +124,11 @@ legend {
     outline: 0; }
 
 a {
-  color: #ffffff9f;
+  color: #9c27b0;
   text-decoration: none;
   background-color: transparent; }
   a:hover, a:focus {
-    color: #4c229b;
+    color: #89229b;
     text-decoration: none; }
 
 label {

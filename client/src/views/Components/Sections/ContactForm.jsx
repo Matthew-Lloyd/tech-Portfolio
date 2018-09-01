@@ -26,7 +26,7 @@ class ContactForm extends React.Component {
     super(props);
     this.state = {
       fullName: "",
-      email: "",
+      Email: "",
       primaryPhone: "",
       Message: "",
     };
@@ -41,18 +41,24 @@ class ContactForm extends React.Component {
     });
   };
     async handleSubmit() {
+      // e.preventDefault();
+      console.log(this.state.fullName);
+      console.log(this.state.Email);
+      console.log(this.state.primaryPhone);
+      console.log(this.state.Message);
+
     alert("Contact information Sent!");
-    // e.preventDefault()
+
     const {
       fullName, 
-      email, 
+      Email, 
       primaryPhone,  
       Message
     } = this.state;
 
     const form = await axios.post('/api/form', {
       fullName,
-      email,
+      Email,
       primaryPhone: primaryPhone.toString(),
       Message
     });
@@ -66,7 +72,7 @@ class ContactForm extends React.Component {
           <GridContainer justify="center">
             {/* <GridItem xs={12} sm={12} md={12}> */}
               <Card>
-                <form className={classes.form}>
+            <form onSubmit={this.handleSubmit} className={classes.form}>
                   <CardHeader color="danger" className={classes.cardHeader}>
                     <h3>CONTACT</h3>
                     <div className={classes.socialLine}>
@@ -125,13 +131,13 @@ class ContactForm extends React.Component {
                     <CustomInput
                       onChange={this.handleInputChange}
                       labelText="Email"
-                      id="email"
+                      id="Email"
                       formControlProps={{
                         fullWidth: true
                       }}
                       inputProps={{
-                        type: "email",
-                        name: "email",
+                        type: "Email",
+                        name: "Email",
                         onChange: event => this.handleInputChange(event),
                         endAdornment: (
                           <InputAdornment position="end">
